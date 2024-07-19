@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+  font-family: "Playfair Display", serif; 
+  background-color: rgb(236, 236, 230); 
+}
+
+.menu{
+
+  text-align: center;
+  display: flex;
+  width: 100%;
+
+   background-color:  rgb(151, 158, 134);
+}
+.men{
+
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 22px;
+  border-radius: 5px;
+
+  
+}
+.cult{
+  
+  border-top-right-radius: 40px;
+  margin-left: 30px;
+}
+.contact{
+  margin-top: 40px;
+  height: 380px;
+  
+  border-top-right-radius: 40px;
+  background-color:  rgb(151, 158, 134);
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+#text{
+  margin-left: 15px;
+   margin-top: 50px;
+  color:white;
+  font-size: 30px;
+  max-width: 900px;
+  
+}
+.oliv{
+
+  
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  height: 60px;
+  width: 750px;
+  background-color: rgb(151, 158, 134);
+  margin-left: 350px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.img{
+  border-bottom-left-radius: 40px;
+  
+}
+.contact1{
+  margin-top: 40px;
+  height: 400px;
+  border-top-right-radius: 40px;
+  background-color:  rgb(151, 158, 134);
+  display: flex;
+  
+  margin-right: 10px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+#text1{
+  margin-left: 15px;
+   margin-top: 50px;
+  color:white;
+  font-size: 20px;
+  max-width: 1000px;
+  
+}
+.conta{
+  margin-top: 30px;
+  height: 300px;
+  width: 100%;
+  border-top-right-radius: 100px;
+  background-color:  rgb(151, 158, 134);
+}
