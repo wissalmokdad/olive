@@ -5,23 +5,45 @@ body{
   background-color: rgb(236, 236, 230); 
 }
 
-.menu{
-
-  text-align: center;
-  display: flex;
+header {
+  position: fixed;
+  top: 0;
   width: 100%;
-
-   background-color:  rgb(151, 158, 134);
+  background-color: rgb(151, 158, 134);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
-.men{
 
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
   color: white;
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 22px;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
   border-radius: 5px;
+}
 
-  
+.menu a:hover {
+  background-color: white;
+  color: rgb(151, 158, 134);
 }
 .cult{
   
@@ -91,4 +113,25 @@ body{
   width: 100%;
   border-top-right-radius: 100px;
   background-color:  rgb(151, 158, 134);
+}
+.back-to-home {
+  position: fixed;
+  bottom: 20px; /* Distance du bas de la
+  right: 20px; /* Distance du bord droit de la page */
+  background-color: rgb(151, 158, 134); /* Couleur de fond du bouton */
+  padding: 15px; /* Espacement interne du bouton */
+  border-radius: 50%; /* Bords arrondis du bouton pour une forme circulaire */
+  text-decoration: none; /* Supprime le soulignement du lien */
+  font-size: 24px; /* Taille de l'icône */
+  color: white; /* Couleur de l'icône */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée du bouton */
+  transition: background-color 0.3s, transform 0.3s; /* Effets de transition */
+}
+
+.back-to-home:hover {
+  background-color: rgb(130, 140, 112); /* Couleur de fond au survol */
+  transform: scale(1.05); /* Agrandissement léger au survol */
 }
