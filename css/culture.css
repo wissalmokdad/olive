@@ -1,137 +1,177 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-body{
-  font-family: "Playfair Display", serif; 
-  background-color: rgb(236, 236, 230); 
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgb(151, 158, 134);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+    background-color: #003a3c;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menu li {
-  margin: 0 20px;
-  position: relative;
+    display: inline;
+    margin: 0 15px;
 }
 
 .menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  padding: 10px 20px;
-  transition: background-color 0.3s, color 0.3s;
-  border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .menu a:hover {
-  background-color: white;
-  color: rgb(151, 158, 134);
+    color: #8a9a5b;
 }
-.cult{
-  
-  border-top-right-radius: 40px;
-  margin-left: 30px;
-}
-.contact{
-  margin-top: 40px;
-  height: 380px;
-  
-  border-top-right-radius: 40px;
-  background-color:  rgb(151, 158, 134);
-  display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 40px;
-}
-#text{
-  margin-left: 15px;
-   margin-top: 50px;
-  color:white;
-  font-size: 30px;
-  max-width: 900px;
-  
-}
-.oliv{
 
-  
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 30px;
-  height: 60px;
-  width: 750px;
-  background-color: rgb(151, 158, 134);
-  margin-left: 350px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.img{
-  border-bottom-left-radius: 40px;
-  
+
+.text {
+    flex: 1;
+    margin-right: 20px;
 }
-.contact1{
-  margin-top: 40px;
-  height: 400px;
-  border-top-right-radius: 40px;
-  background-color:  rgb(151, 158, 134);
-  display: flex;
-  
-  margin-right: 10px;
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 40px;
+
+.text h2 {
+    color: #003a3c;
 }
-#text1{
-  margin-left: 15px;
-   margin-top: 50px;
-  color:white;
-  font-size: 20px;
-  max-width: 1000px;
-  
+
+.text p {
+    line-height: 1.6;
 }
-.conta{
-  margin-top: 30px;
-  height: 300px;
-  width: 100%;
-  border-top-right-radius: 100px;
-  background-color:  rgb(151, 158, 134);
+
+.divider {
+    height: 2px;
+    background-color: #8a9a5b;
+    width: 100%;
+    margin: 20px 0;
 }
+
+.image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 .back-to-home {
-  position: fixed;
-  bottom: 20px; /* Distance du bas de la
-  right: 20px; /* Distance du bord droit de la page */
-  background-color: rgb(151, 158, 134); /* Couleur de fond du bouton */
-  padding: 15px; /* Espacement interne du bouton */
-  border-radius: 50%; /* Bords arrondis du bouton pour une forme circulaire */
-  text-decoration: none; /* Supprime le soulignement du lien */
-  font-size: 24px; /* Taille de l'icône */
-  color: white; /* Couleur de l'icône */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée du bouton */
-  transition: background-color 0.3s, transform 0.3s; /* Effets de transition */
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: #003a3c;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.back-to-home:hover {
-  background-color: rgb(130, 140, 112); /* Couleur de fond au survol */
-  transform: scale(1.05); /* Agrandissement léger au survol */
+.back-to-home img {
+    vertical-align: middle;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
